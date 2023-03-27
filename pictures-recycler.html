@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Pictures recycler</title>
+
+  <meta name="description" content="A 2.0 version of the website which allows you to play with your own material.">
+
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+</head>
+
+<body>
+
+  <div class="loader">
+    <div id="textloader">
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/loader.js"></script>
+
+  <form id="form_upload">
+    <div class="form-group">
+      <label for="file-input">Select pictures</label>
+      <input onchange="uploadFiles()" type="file" id="file-input" multiple>
+    </div>
+  </form>
+
+  <div class="recycling_info text_top">
+      <p>
+        Our society's emphasis on individualism urges us to become content creators in order to establish our uniqueness. 
+        The vast majority of images so produced become instantly obsolete as they land on the internet.
+        Despite being intangible, this data has a physical cost as it occupies space on servers, ultimately contributing to ecological impact over time. 
+        Why not giving another visual life to these «digital wastes» by recycling them?
+      </p>
+  </div>
+
+<div class="recycling_info text_bottom">
+    <p>
+      Select as many of your own pictures as you like, hover on the numbers and let them merge inside your browser.
+      For performance reasons, each file should ideally weight <!-- <span class="green"> -->under 1mb<!-- </span> -->.
+     The project can be found open source on <a class="link" href="https://github.com/ff87c3/pictures-recycler">Github</a>.
+    </p>
+</div> 
+
+  <div id="input">
+    <div id="rangeValue" class="grey">50</div>
+    <Input class="range blur" type="range" value="50" min="0" max="100" onChange="rangeSlide(this.value)"
+      onmousemove="rangeSlide(this.value)"></Input>
+  </div>
+
+  <div class="numbers">
+    <div id="n-0">01</div>
+    <div id="n-1">02</div>
+    <div id="n-2">03</div>
+    <div id="n-3">04</div>
+    <div id="n-4">05</div>
+    <div id="n-5">06</div>
+    <div id="n-6">07</div>
+    <div id="n-7">08</div>
+    <div id="n-8">09</div>
+    <div id="n-9">10</div>
+    <div id="n-10">11</div>
+    <div id="n-11">12</div>
+    <div id="n-12">13</div>
+    <div id="n-13">14</div>
+    <div id="n-14">15</div>
+    <div id="n-15">16</div>
+    <div id="n-16">17</div>
+    <div id="n-17">18</div>
+    <div id="n-18">19</div>
+    <div id="n-19">20</div>
+    <div id="n-20">21</div>
+    <div id="n-21">22</div>
+    <div id="n-22">23</div>
+    <div id="n-23">24</div>
+    <div id="n-24">25</div>
+    <div id="n-25">26</div>
+    <div id="n-26">27</div>
+    <div id="n-27">28</div>
+    <div id="n-28">29</div>
+    <div id="n-29">30</div>
+    <div id="n-30">31</div>
+    <div id="n-31">32</div>
+    <div id="n-32">33</div>
+    <div id="n-33">34</div>
+    <div id="n-34">35</div>
+    <div id="n-35">36</div>
+    <div id="n-36">37</div>
+    <div id="n-37">38</div>
+    <div id="n-38">39</div>
+    <div id="n-39">40</div>
+    <div id="n-40">41</div>
+    <div id="n-41">42</div>
+    <div id="n-42">43</div>
+    <div id="n-44">44</div>
+    <div id="n-45">45</div>
+    <div id="n-46">46</div>
+    <div id="n-47">47</div>
+    <div id="n-48">48</div>
+    <div id="n-49">49</div>
+    <div id="n-50">50</div>
+  </div>
+
+  <div id="pictures"></div>
+
+  <div id="monochrom" class="text-mono"></div>
+
+  <div id="close" onclick="refreshPage()">restart</div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
